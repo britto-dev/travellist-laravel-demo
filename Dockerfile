@@ -32,3 +32,6 @@ RUN mkdir -p /home/$user/.composer && \
 WORKDIR /var/www
 
 USER $user
+
+#Install vendor dependencies
+RUN composer install
